@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f8f3e9" />
+    <meta name="description" content="Одно маленькое приключение. Одна большая любовь. Письмо для Веры от Димы." />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Вера, это всё для тебя ♡</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></symbol>
+      <symbol id="i-volume" viewBox="0 0 24 24"><path d="m11 4-6 5H2v6h3l6 5V4Zm4 4a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></symbol>
+      <symbol id="i-muted" viewBox="0 0 24 24"><path d="m11 4-6 5H2v6h3l6 5V4Zm5 5 6 6m0-6-6 6"/></symbol>
+      <symbol id="i-reset" viewBox="0 0 24 24"><path d="M3 10a9 9 0 1 1 1 7M3 4v6h6"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8L12 2Z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 7 9-7"/></symbol>
+      <symbol id="i-gift" viewBox="0 0 24 24"><path d="M3 8h18v4H3zm2 4v9h14v-9M12 8v13m0-13H8a3 3 0 1 1 3-3l1 3Zm0 0h4a3 3 0 1 0-3-3l-1 3Z"/></symbol>
+    </svg>
+    <div class="ambient" aria-hidden="true"><i>♡</i><i>✧</i><i>♡</i><i>✧</i><i>♡</i><i>♡</i></div>
+    <header class="site-header">
+      <a class="wordmark" href="#" aria-label="На начало приключения"><span class="brand-mark">д<span>♡</span>в</span><span class="brand-caption">одна наша история</span></a>
+      <div class="header-tools">
+        <span class="private-label"><span></span> только для Веры</span>
+        <button class="icon-button" id="sound-button" aria-label="Включить нежные звуки" aria-pressed="false" title="Нежные звуки"><svg class="icon"><use href="#i-muted"/></svg></button>
+        <button class="icon-button" id="restart-button" aria-label="Начать приключение сначала" title="Начать сначала" hidden><svg class="icon"><use href="#i-reset"/></svg></button>
+      </div>
+    </header>
+    <main id="app" tabindex="-1"></main>
+    <footer class="site-footer"><span>сделано одним влюблённым мужем</span><span class="footer-heart">♡</span><span>с любовью, Дима</span></footer>
+    <div id="effects" aria-hidden="true"></div>
+    <div id="announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+    <dialog id="restart-dialog" class="restart-dialog"><form method="dialog"><span class="eyebrow">ещё одно приключение?</span><h2>Начнём с конверта?</h2><p>Все воспоминания останутся вашими. А ключи к письму будем собирать заново.</p><div class="dialog-actions"><button value="cancel" class="button button-soft">Продолжить</button><button value="restart" class="button">Начать сначала</button></div></form></dialog>
+    <noscript><div class="noscript">Малыш, для этого маленького приключения нужно включить JavaScript в браузере. Письмо тебя дождётся ♡</div></noscript>
+  </body>
+</html>
